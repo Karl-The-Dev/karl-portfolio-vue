@@ -1,0 +1,48 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "DevCollab Hub",
+      "icon": "cloud-upload",
+      "tech": "MERN / JWT",
+      "description": "Full-stack collaboration platform with real-time task management, MongoDB aggregation, and secure API authentication.",
+      "links": [
+        { "icon": "github", "label": "GitHub" },
+        { "icon": "box-arrow-up-right", "label": "Live Demo" }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "MarketFlow API",
+      "icon": "cart-check",
+      "tech": "Node / Express / NoSQL",
+      "description": "High-performance e-commerce backend with Mongoose schemas, RESTful endpoints, rate limiting & advanced query optimization.",
+      "links": [
+        { "icon": "gitlab", "label": "GitLab CI" },
+        { "icon": "filetype-json", "label": "REST API" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "VisuAlgo Playground",
+      "icon": "sort-numeric-down",
+      "tech": "Algorithms / DSA / Bootstrap",
+      "description": "Interactive visualization for sorting, graph traversals, and data structures. Built with semantic HTML, CSS3, and Bootstrap 5 interface.",
+      "links": [
+        { "icon": "diagram-3", "label": "Data Structures" },
+        { "icon": "code-square", "label": "Function Coding" }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "TaskSphere Mobile",
+      "icon": "phone",
+      "tech": "React Native / NodeJS",
+      "description": "Cross-platform mobile app with sync backend (Express + MongoDB). Offline support and real-time cloud database design.",
+      "links": [
+        { "icon": "app-indicator", "label": "App Building" },
+        { "icon": "database-gear", "label": "DB Management" }
+      ]
+    }
+  ]
+}

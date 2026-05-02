@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "title": "E-Commerce App (MERN)",
+    "description": "Full-stack e-commerce platform built with the MERN stack (MongoDB, Express.js, React, Node.js). Implements dynamic product catalog with faceted filtering and sorting, real-time search, secure JWT authentication, cart state management, and Stripe checkout integration. Includes an admin dashboard with real-time order analytics and user management. The platform handles 1000+ concurrent users with optimized database queries and Redis caching.",
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "source": "https://karl-capstone3-vuejs.vercel.app/"
+  },
+  {
+    "id": 2,
+    "title": "Food Restaurant Mockup (UI/UX)",
+    "description": "Responsive front-end design for a restaurant homepage. Showcases semantic HTML5, CSS3 flexbox/grid, and Bootstrap 5 for a modern, mobile-first layout. Features a dynamic menu section, call-to-action buttons, and hover effects – demonstrating pixel-perfect implementation from Figma designs. Includes accessibility features (ARIA labels, keyboard navigation) and lazy loading for images.",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.lifestyleasia.com%2Fwp-content%2Fuploads%2Fsites%2F6%2F2022%2F11%2F15121303%2Fmarcin-skalij-w_2vlvtgk7e-unsplash.jpeg&f=1&nofb=1&ipt=a13ea037a724357113c24fad4a683899d8e6c230ff2c6cd4dcadc566cc40f95b",
+    "source": "https://karl-the-dev.github.io/home-page-exam/"
+  },
+  {
+    "id": 3,
+    "title": "Flight Booking Mockup (Responsive UI)",
+    "description": "Modern, responsive flight booking interface demonstrating advanced front-end engineering. Features a dynamic flight search form with date pickers, passenger selection, destination cards with hover effects, and seamless mobile navigation using HTML5, CSS3 Grid/Flexbox, and Bootstrap 5. Implements accessible form elements, form validation, and a carbon-aware design component. Showcases pixel-perfect UI implementation from mockup to production-ready code with cross-browser compatibility.",
+    "image": "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "source": "https://karl-flight-booking-site.netlify.app/"
+  },
+  {
+    "id": 4,
+    "title": "Flight Booking Database Design (ERD)",
+    "description": "Comprehensive Entity-Relationship Diagram (ERD) for a flight booking system database. Designed using normalized database principles (3NF) with tables for Users, Flights, Bookings, Payments, Seats, Airlines, and Baggage. Implements proper foreign key relationships, composite keys, indexes for query optimization (B-tree on flight dates and user emails), and data integrity constraints (CHECK, UNIQUE, NOT NULL). Includes stored procedures for automatic seat allocation and triggers for booking confirmation emails. Demonstrates expertise in database design, schema planning, and relational data modeling for scalable travel applications handling millions of transactions.",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.ermodelexample.com%2Fwp-content%2Fuploads%2F2020%2F06%2Ferd-templates-er-diagram-examples-moqups-for-simple-erd.png&f=1&nofb=1&ipt=936ec129152a1b0df67a5f5604033f5f9a590deac066cfcfeead497988a7d7d7",
+    "source": "https://drive.google.com/file/d/1hxcPcRai0rxXBY1CvMrF-Fttf9ipn-Bv/view?usp=drive_link"
+  },
+  {
+    "id": 5,
+    "title": "Message Posts App (MEVN)",
+    "description": "Full-stack messaging application using the MEVN stack (MongoDB, Express.js, Vue 3, Node.js). Features include JWT authentication, post creation/editing/deletion, nested comment threads with real-time updates, and responsive Vue frontend with Vue Router and Pinia state management. Demonstrates end-to-end JavaScript development, API integration, and responsive design patterns. Deployed on Vercel and Render.",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F007%2F655%2F984%2Foriginal%2Flogin-form-page-template-dark-theme-flat-style-vector.jpg&f=1&nofb=1&ipt=e4d00b46c68622ec694ae58ce65af0ee8f5c1d2cdf5e076ed6d81c52bda27119",
+    "source": "https://s88-karl-post-tracker-vue.vercel.app/"
+  },
+  {
+    "id": 6,
+    "title": "E-Commerce API (Backend)",
+    "description": "Scalable e-commerce backend service with Express.js and MongoDB. Implements order processing workflows, real-time inventory management, JWT role-based auth (user/admin), automated order reporting (PDF generation), and product CRUD with image upload. Features include payment simulation, email notifications (Nodemailer), and API versioning. Fully tested REST endpoints with 90%+ test coverage using Jest. Postman public documentation available.",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.codemzy.com%2Fblog%2Fchrome%2Fchrome-pretty-print-off.png&f=1&nofb=1&ipt=792aea35f1e5e3676acefa9661866b28df90a7d511ea123f031c30b4f6a65fe3",
+    "source": "https://mycapstone2-expressjs.onrender.com/products/active"
+  },
+  {
+    "id": 7,    
+    "title": "Message Posts API (RESTful)",
+    "description": "Production-ready RESTful API for a messaging platform. Built with Node.js, Express, and MongoDB with Mongoose ODM. Features user registration, bcrypt password hashing, JWT authentication, and full CRUD for posts/comments. Includes rate limiting (100 requests per 15 minutes), request validation using Joi, and comprehensive Postman documentation with 25+ endpoints. Deployed on Render with 99.9% uptime.",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.codemzy.com%2Fblog%2Fchrome%2Fchrome-pretty-print-off.png&f=1&nofb=1&ipt=792aea35f1e5e3676acefa9661866b28df90a7d511ea123f031c30b4f6a65fe3",
+    "source": "https://s87-post-tracker-api.onrender.com/posts/getPosts"
+  }
+]
