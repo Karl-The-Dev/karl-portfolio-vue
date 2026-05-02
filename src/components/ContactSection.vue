@@ -169,7 +169,7 @@ const notyf = new Notyf({
   ]
 });
 
-const WEB3FORMS_ACCESS_KEY = import.meta.env.VITE_WEB3FORMS_ACCESS_KEY;
+const WEB3FORMS_ACCESS_KEY = "70c7f30a-ca7d-44f4-bd48-422768b724b2";
 
 // Email subject
 const subject = "New message from Developer Portfolio Contact Form";
@@ -245,7 +245,7 @@ const submitForm = async () => {
 };
 
 
-const SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
+const SITE_KEY = "6LdTj38sAAAAAEng_olZ646hMIHxVbt49d9gHkc8";
 
 const recaptchaContainer = ref(null);
 const recaptchaWidgetId = ref(null);
