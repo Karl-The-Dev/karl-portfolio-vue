@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "E-Commerce App (MERN)",
+    "title": "E-Commerce App (MEVN)",
     "description": "Full-stack e-commerce platform built with the MERN stack (MongoDB, Express.js, React, Node.js). Implements dynamic product catalog with faceted filtering and sorting, real-time search, secure JWT authentication, cart state management, and Stripe checkout integration. Includes an admin dashboard with real-time order analytics and user management. The platform handles 1000+ concurrent users with optimized database queries and Redis caching.",
     "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
     "source": "https://karl-capstone3-vuejs.vercel.app/"
