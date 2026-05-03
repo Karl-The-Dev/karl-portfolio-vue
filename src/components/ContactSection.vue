@@ -235,7 +235,7 @@ const submitForm = async () => {
       resetRecaptcha();
     } else {
       isLoading.value = false;
-      notyf.error("Failed to send message. Please try again.");
+      notyf.error("Failed to send message. Please try again." + error);
     }
   } catch (error) {
     console.error(error);
