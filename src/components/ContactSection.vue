@@ -181,21 +181,84 @@ const message = ref("");
 const isLoading = ref(false);
 
 // Submit form
-const submitForm = async () => {
-  // Check if reCAPTCHA token is present
-  if (!recaptchaToken.value) {
-    notyf.error("Please verify that you are not a robot");
-    return;
-  }
+// const submitForm = async () => {
+//   // Check if reCAPTCHA token is present
+//   if (!recaptchaToken.value) {
+//     notyf.error("Please verify that you are not a robot");
+//     return;
+//   }
 
+//   // Validate form fields
+//   if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+//     notyf.error("Please fill in all fields");
+//     return;
+//   }
+
+//   // Validate email format
+//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+//   if (!emailRegex.test(email.value)) {
+//     notyf.error("Please enter a valid email address");
+//     return;
+//   }
+
+//   isLoading.value = true;
+
+//   try {
+//     const response = await fetch("https://api.web3forms.com/submit", {
+//       method: "POST",
+//       headers: {
+//         "Content-Type": "application/json",
+//         "Accept": "application/json"
+//       },
+//       body: JSON.stringify({
+//         access_key: WEB3FORMS_ACCESS_KEY,
+//         subject: subject,
+//         name: name.value,
+//         email: email.value,
+//         message: message.value
+//       })
+//     });
+
+//     const result = await response.json();
+
+//     if (result.success) {
+//       console.log(result);
+//       isLoading.value = false;
+//       notyf.success("Message sent successfully!");
+      
+//       // Reset form
+//       name.value = "";
+//       email.value = "";
+//       message.value = "";
+      
+//       // Reset reCAPTCHA
+//       resetRecaptcha();
+//     } else {
+//       isLoading.value = false;
+//       notyf.error("Failed to send message. Please try again." + error);
+//     }
+//   } catch (error) {
+//     console.error(error);
+//     isLoading.value = false;
+//     notyf.error("Network error. Please check your connection.");
+//   }
+// };
+
+  // debug 2026-09-27
+  const submitForm = async () => {
   // Validate form fields
-  if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
+  if (
+    !name.value.trim() ||
+    !email.value.trim() ||
+    !message.value.trim()
+  ) {
     notyf.error("Please fill in all fields");
     return;
   }
 
-  // Validate email format
+  // Validate email
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
   if (!emailRegex.test(email.value)) {
     notyf.error("Please enter a valid email address");
     return;
@@ -204,46 +267,58 @@ const submitForm = async () => {
   isLoading.value = true;
 
   try {
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        "Accept": "application/json"
-      },
-      body: JSON.stringify({
-        access_key: WEB3FORMS_ACCESS_KEY,
-        subject: subject,
-        name: name.value,
-        email: email.value,
-        message: message.value
-      })
-    });
+    const response = await fetch(
+      "https://api.web3forms.com/submit",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORMS_ACCESS_KEY,
+          subject: subject,
+          name: name.value.trim(),
+          email: email.value.trim(),
+          message: message.value.trim()
+        })
+      }
+    );
 
     const result = await response.json();
 
-    if (result.success) {
-      console.log(result);
-      isLoading.value = false;
+    console.log("Web3Forms HTTP status:", response.status);
+    console.log("Web3Forms response:", result);
+
+    if (response.ok && result.success) {
       notyf.success("Message sent successfully!");
-      
-      // Reset form
+
       name.value = "";
       email.value = "";
       message.value = "";
-      
-      // Reset reCAPTCHA
-      resetRecaptcha();
-    } else {
-      isLoading.value = false;
-      notyf.error("Failed to send message. Please try again." + error);
+
+      return;
     }
+
+    console.error("Web3Forms submission failed:", result);
+
+    notyf.error(
+      result.message ||
+      "Failed to send message. Please try again."
+    );
+
   } catch (error) {
-    console.error(error);
+    console.error("Contact form network error:", error);
+
+    notyf.error(
+      "Network error. Please check your connection."
+    );
+
+  } finally {
     isLoading.value = false;
-    notyf.error("Network error. Please check your connection.");
   }
 };
-
+// debug 2026-09-27
 
 const SITE_KEY = "6LfhYX8sAAAAANaWAQrEJX83owf8L3NUvL7c2FAG";
 
