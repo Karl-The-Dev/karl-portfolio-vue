@@ -169,7 +169,7 @@ const notyf = new Notyf({
   ]
 });
 
-const WEB3FORMS_ACCESS_KEY = "70c7f30a-ca7d-44f4-bd48-422768b724b2";
+const WEB3FORMS_ACCESS_KEY = "18b2bd34-575e-4f66-8cf1-15d91873a7a0";
 
 // Email subject
 const subject = "New message from Developer Portfolio Contact Form";
@@ -287,8 +287,8 @@ const isLoading = ref(false);
 
     const result = await response.json();
 
-    console.log("Web3Forms HTTP status:", response.status);
-    console.log("Web3Forms response:", result);
+    // console.log("Web3Forms HTTP status:", response.status);
+    // console.log("Web3Forms response:", result);
 
     if (response.ok && result.success) {
       notyf.success("Message sent successfully!");
@@ -300,7 +300,7 @@ const isLoading = ref(false);
       return;
     }
 
-    console.error("Web3Forms submission failed:", result);
+    // console.error("Web3Forms submission failed:", result);
 
     notyf.error(
       result.message ||
@@ -308,7 +308,7 @@ const isLoading = ref(false);
     );
 
   } catch (error) {
-    console.error("Contact form network error:", error);
+    // console.error("Contact form network error:", error);
 
     notyf.error(
       "Network error. Please check your connection."
