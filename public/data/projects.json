@@ -1,5 +1,12 @@
 [
   {
+    "id": 0,
+    "title": "Bildflex - Full-Stack Web Application",
+    "description": "Live full-stack web application developed during a six-month team project. Served as the primary backend developer, working on MongoDB schemas, REST APIs, authentication, bookings, messaging, reviews, security, and integrations. Also contributed to responsive Vue.js frontend development, testing, and debugging.",
+    "image": "/images/bildflex.png",
+    "source": "https://www.bildflex.com/"
+  },
+  {
     "id": 1,
     "title": "E-Commerce App (MEVN)",
     "description": "Full-stack e-commerce platform built with the MERN stack (MongoDB, Express.js, React, Node.js). Implements dynamic product catalog with faceted filtering and sorting, real-time search, secure JWT authentication, cart state management, and Stripe checkout integration. Includes an admin dashboard with real-time order analytics and user management. The platform handles 1000+ concurrent users with optimized database queries and Redis caching.",
